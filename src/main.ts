@@ -1,6 +1,13 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideStore } from '@ngrx/store';
+import { provideEffects } from '@ngrx/effects';
 import { AppComponent } from './app/app.component';
+import { taskReducer } from './app/store/reducers/task.reducer';
+import { TaskEffects } from './app/store/effects/task.effects';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideStore({ tasks: taskReducer }),
+    provideEffects([TaskEffects])
+  ]
+}).catch(err => console.error(err));

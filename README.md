@@ -17,13 +17,13 @@ Bu proje, Angular ve NgRx kullanarak oluşturulmuş bir görev listesi uygulamas
    ng serve 
 
 ## Proje Yapısı
-+models/: Uygulama veritabanı modellerini içerir.
-+services/: Veritabanı işlemleri ve yerel depolama işlemlerini içerir.
-+store/: NgRx state management dosyalarını içerir (actions, reducers, selectors, effects).
-+components/: Uygulama bileşenlerini içerir.
++models/: Uygulama veritabanı modellerini içerir.  
++services/: Veritabanı işlemleri ve yerel depolama işlemlerini içerir.  
++store/: NgRx state management dosyalarını içerir (actions, reducers, selectors, effects).  
++components/: Uygulama bileşenlerini içerir.  
 
 ## Kullanım
-+Yeni görev eklemek için formu doldurun ve "Görev Ekle" butonuna tıklayın.
-+Görev listesinden görevleri görüntüleyin.
-+Görevleri düzenleyin veya silin.
-# todo-app
++Yeni görev eklemek için formu doldurun ve "Görev Ekle" butonuna tıklayın.  
++Görev listesinden görevleri görüntüleyin.  
++Görevleri düzenleyin veya silin.  
+

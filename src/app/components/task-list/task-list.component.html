@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let task of tasks$ | async">
+    <div *ngIf="editMode[task.id]; else viewMode">
+      <input [(ngModel)]="editedTask.title" placeholder="Task Title" />
+      <textarea [(ngModel)]="editedTask.description" placeholder="Task Description"></textarea>
+      <button (click)="saveTask(task.id)">Save</button>
+      <button (click)="cancelEdit(task.id)">Cancel</button>
+    </div>
+    <ng-template #viewMode>
+      <span>{{ task.title }} - {{ task.description }}</span>
+      <button (click)="editTask(task)">Edit</button>
+      <button (click)="deleteTask(task.id)">Delete</button>
+    </ng-template>
+  </li>
+</ul>
