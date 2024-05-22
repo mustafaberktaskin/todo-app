@@ -22,7 +22,7 @@ Bu proje, Angular ve NgRx kullanarak oluşturulmuş bir görev listesi uygulamas
 +store/: NgRx state management dosyalarını içerir (actions, reducers, selectors, effects).  
 +components/: Uygulama bileşenlerini içerir.
 
-## Kullanım
+## Kullanım  
 +Yeni görev eklemek için formu doldurun ve "Görev Ekle" butonuna tıklayın.  
 +Görev listesinden görevleri görüntüleyin.  
 +Görevleri düzenleyin veya silin.  
